@@ -192,5 +192,6 @@ Use o SE pra programas simples em janelas, EE pra programas complexos com mais r
 #### Necessidades
 Precisamos do JDK, já que queremos desenvolver. E precisamos do JDK com a IDE NetBeans do Java SE.
 
-
+# Aula 3 – Instalando o JDK no seu Computador
+Após essa aula, você já tem instalado o Java SE (Edição Padrão), com a JDK do Java SE, com o Netbeans,Java FX e Java Docs.
 
