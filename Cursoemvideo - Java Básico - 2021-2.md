@@ -160,11 +160,37 @@ Fórmula correta para calcular a média aritmética entre 4 notas, representadas
 d)(N1 + N2 + N3 + N4)/4 correta
 
 # Instalando o JDK no seu Computador
-#### IDE
+### IDE
 Integrated Development Environment
 ou Ambiente de Desenvolvimento Integrado
 Características e vantagens da IDE
 - IDE é um editor completo
 - Possui colorização de código
 - Contém integração completa com Compilador, Linker e Debugger
-- 
+- Desenvolver de maneira mais simples
+- Gerador de código
+- Ambiente de testes
+- Facilita a distribuição
+
+A IDE escolhida pela própria Sun como a oficial e a Oracle quando comprou, continuou com ela.
+Netbeans possui integrações e wizards mais fáceis que o Eclipse.
+
+#### Edições do JDK
+### SE
+Standard Edition ou Edição Padrão
+Se for criar uma aplicação e precisa de janelas, ambientes ou controles padrões de sistemas operacionais de interface gráfica, use a JDK SE. 
+### EE
+Enterprise Edition ou Edição Empresarial
+Se for criar aplicativos em janela, mas que utilizar acesso remoto, acesso a banco de dados gigantes, sistemas maiores que são utilizados em grandes empresas, baixe EE.
+### ME
+Micro Edition ou Micro Edição
+Se for desenvolver alguma coisa menor, um controle de dispositivo portátil, aplicações pra celulares, smartphones ou smartwatchs, ME a versão criada pra você.
+
+Resumo:
+Use o SE pra programas simples em janelas, EE pra programas complexos com mais recursos e o ME caso queira uma edição portátil do seu aplicativo.
+
+#### Necessidades
+Precisamos do JDK, já que queremos desenvolver. E precisamos do JDK com a IDE NetBeans do Java SE.
+
+
+
