@@ -195,3 +195,53 @@ Precisamos do JDK, já que queremos desenvolver. E precisamos do JDK com a IDE N
 # Aula 3 – Instalando o JDK no seu Computador
 Após essa aula, você já tem instalado o Java SE (Edição Padrão), com a JDK do Java SE, com o Netbeans,Java FX e Java Docs.
 
+# Exercícios de Java #03
+Questões de algoritmos da Aeronáutica.
+Assinale a expressão lógica com resultado verdade.
+a) (x>5).E.(.NÃO.(Y<3))
+
+Assinale o valor de x após a execução. Considere A=6, B=2, C=4, D=3.
+Se .não.(A>6).e.não.(B<3)então
+    x<-A/D
+Senão
+    x<-C*A
+Fim_se
+c)24
+
+Marque qual o operador lógico usado na tabela.
+f f f
+v f v
+f v v
+v v v 
+c).ou.
+
+Considerando os tipos de dados, relcione as colunas e depois marque a correta.
+(1)inteiros
+(2)reais
+(3)caracteres
+(4)lógicos
+
+(1)35; 0; -56
+(4).F.;.V.
+(3) "Rua Brigadeira Lyra"
+(2) -0,5; 1,8; -4
+
+d) 1,4,3,2
+   -ACABOU em 9:00-
+
+# Aula 4 – Primeiro Programa em Java
+Todo o programa em Java podem ser compostos de pacotes. O primeiro comando que daremos no nosso programa é o comando de pacotes.
+
+~~~Java
+package primeiroprograma;
+~~~
+
+Para o primeiro programa é opcional!
+
+O primeiro comando que toda a classe Java tem que ter, é justamente o cabeçalho da classe.
+
+~~~Java
+public class PrimeiroPrograma{
+}
+~~~
+
