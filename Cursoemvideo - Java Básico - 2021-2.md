@@ -354,3 +354,91 @@ Então, na próxima aula, utilizaremos bibliotecas e APIs, como por exemplo, Swi
    -ACABOU em 20:55-
 
 # Exercícios de Java #04
+#### 1.Aeronáutica (EAGS-SIN)
+Qual o valor final de X, após a execução do código em português estruturado. Considere que A=3, B=2, C=8 e D=7
+
+b) 5
+ 
+#### 2.Aeronáutica (EAGS-SIN)
+Indique a alternativa que represente a expressão aritimética:
+Z=5^2/(32-13)+8.2
+
+Resolução:
+Z=5^2/(32-13)+8.2
+Z=25/(32-13)+8.2
+Z=25/(32-13)+16
+Z=25/(19)+16
+Z ~ 17,32
+
+Z<-((5^2)/(32-13)+(8*2))
+
+<- seta pra esquerda
+^  seta pra cima
+
+### Novo Projeto no NetBeans
+
+~~~Java
+package horadosistema;
+
+import java.util.Date;
+import javax.swing.JOptionPane;
+/**
+ * Mostrar hora e data do sistema
+ * @author Gabriel
+ */
+public class HoraDoSistema {
+    public static void main(String[] args) {
+        Date data = new Date();
+        JOptionPane.showMessageDialog(null, data);
+    } 
+}
+~~~
+
+Quando utilizo a palavra **new** estou criando um novo objeto.
+
+~~~Java
+        System.out.println("A data e a hora do sistema são " + data.toString());
+~~~
+
+## 2 Novos Desafios
+### 1. Pegue o idioma do Sistema Operacional usando Java!
+
+~~~Java
+package idiomasistema;
+import java.util.Locale;
+/**
+ * Idioma do sistema
+ * @author Gabriel
+ */
+public class IdiomaSistema {
+    public static void main(String[] args) {
+        Locale loc = Locale.getDefault();
+        String idioma = loc.getDisplayLanguage();
+        System.out.println("Seu sistema está em " + idioma);
+    }
+}
+~~~
+
+### 2. Pegue resolução da tela!
+
+~~~Java
+package resoluçãosistema;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+/**
+ * Resolução do sistema
+ * @author Gabriel
+ */
+public class ResoluçãoSistema {
+    public static void main(String[] args) {
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double height = screenSize.getHeight();
+        double width = screenSize.getWidth();
+        System.out.println("A resolução da tela é de " + width + " x " + height);        
+    }
+}
+~~~
+
+   -ACABOU em 13:46
+
+# Aula 5 - Introdução ao Swing e JavaFX
