@@ -292,3 +292,65 @@ public class PrimeiroPrograma{
     }
 }
 ~~~
+
+~~~Java
+package primeiroprograma;
+import javax.swing.JOptionPane; //biblioteca necessária para criar painel com mensagem
+public class PrimeiroPrograma {
+    public static void main(String[] args) {
+        //Num Pop up
+        JOptionPane.showMessageDialog(null, "Olá, Mundo!");
+        //No console
+        System.out.println("Olá, Mundo!");
+    }
+}
+~~~
+
+### Case sensitive
+O método main possui todas as letras minúsculas, mas não é um pacote, é um método, se tivesse mais uma palavra seria com a primeira letra Maiúscula.
+No psvm o void indica que main se trata de um método.
+
+#### Classe / Interface
+Primeira letra maiúscula e o resto em Camel Case, ou é Classe ou é Interface
+
+Nesse curso de Java Básico sempre será Classe, pois não veremos Interface.
+
+Ex.: ClasseOuInterface
+
+#### Atributo / Variável / Método
+Primeira letra minúscula e o resto Camel Case, pode ser um Atributo, Variável e Método.
+
+Ex.: atributoVariavelOuMetodo
+
+#### Pacote
+Todas as letras minúsculas, sempre é um pacote
+
+Ex.: pacote
+
+#### Constante
+Todas as letras maiúsculas, sempre é CONSTANTE.
+
+Ex.: CONSTANTE
+
+~~~Java
+System.out.println("Olá, Mundo!");
+//System: primeira letra maiúscula, é uma Classe
+//out: -
+//println: minúsculas, é um método
+~~~
+
+System = Sistema
+out = saída
+println = imprima
+() = o que tiver entre os parênteses é o parâmetro
+
+Imprimir no sistema de saída:
+Seja na tela do celular, do relógio, do computador ou qualquer outro dispositivo onde for executado.
+
+### Duas Técnicas pra Mostrar o Olá, Mundo!
+#### SmartPhone
+Possui o Sistema Operacional Android escrito em C, mas suas aplicações são escritas em Java.
+Então, na próxima aula, utilizaremos bibliotecas e APIs, como por exemplo, Swing e JavaFX.
+   -ACABOU em 20:55-
+
+# Exercícios de Java #04
