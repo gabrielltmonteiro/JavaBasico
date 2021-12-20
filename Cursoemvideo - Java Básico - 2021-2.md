@@ -442,3 +442,28 @@ public class ResoluçãoSistema {
    -ACABOU em 13:46
 
 # Aula 5 - Introdução ao Swing e JavaFX
+## Usando Swing e JavaFX
+Java funciona por pacotes, é como um carro popular. O básico vem no Java, qualquer coisa que precise a mais, é preciso adicionar pacotes.
+
+Exemplo do carro popular:
+Para adicionar ar condicionado
+
+~~~Java
+import arCondicionado;
+~~~
+
+da mesma forma para adicionar trava elétrica, vidro elétrico e rodas de magnésio.
+
+~~~Java
+import arCondicionado;
+import travaEletrica;
+import vidroEletrico;
+import rodasMagnesio;
+~~~
+
+ou seja, tudo que precisar de extra, você precisa importar. O farol não precisa ser importado, já vem por padrão em todo carro popular, e o mesmo ocorre com algumas funcionalidades Java.
+
+### Java.lang
+Por padrão a Linguagem Java vem com um pacote chamado de Java.lang, esse pacote vem com as instruções básicas de funcionamento do Java, as ditas funções essênciais.
+
+
