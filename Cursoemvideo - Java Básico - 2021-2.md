@@ -233,6 +233,7 @@ d) 1,4,3,2
 Todo o programa em Java podem ser compostos de pacotes. O primeiro comando que daremos no nosso programa é o comando de pacotes.
 
 ~~~Java
+//pacote primeiroprograma
 package primeiroprograma;
 ~~~
 
@@ -241,7 +242,53 @@ Para o primeiro programa é opcional!
 O primeiro comando que toda a classe Java tem que ter, é justamente o cabeçalho da classe.
 
 ~~~Java
+//public class NomeDaClasse
 public class PrimeiroPrograma{
 }
 ~~~
 
+As chaves em várias linguagens, são blocos. Tudo que estiver entre as chaves são blocos. Uma classe em Java é considerada um bloco.
+Dentro do bloco da classe criamos o método principal.
+
+~~~Java
+package primeiroprograma;
+public class PrimeiroPrograma{
+    //método principal
+    public static void main(String[] args){
+    }
+}
+~~~
+
+Resumindo:
+Então temos o método principal, dentro da classe PrimeiroPrograma, que faz parte do pacote primeiroprograma.
+
+
+~~~Java
+//pacote primeiroprograma
+package primeiroprograma;
+//public class NomeDaClasse
+public class PrimeiroPrograma{
+    //método principal
+    public static void main(String[] args){
+    }
+}
+~~~
+
+Tenho métodos, as classes são compostas de métodos e posso ter várias classes dentro dos pacotes.
+O método está dentro da classe e a classe faz parte de um pacote de classes.
+
+### JAVA é Case Sensitive
+
+O pacote é todo minúsculo
+A classe é CamelCase
+O método principal deve ser minúsculo
+
+~~~Java
+package primeiroprograma;
+public class PrimeiroPrograma{
+    public static void main(String[] args){
+        //Primeiro comando
+        System.out.print("Olá, Mundo!");
+    }
+}
+~~~
