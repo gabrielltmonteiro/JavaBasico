@@ -442,6 +442,8 @@ public class ResoluçãoSistema {
    -ACABOU em 13:46
 
 # Aula 5 - Introdução ao Swing e JavaFX
+Nessa aula veremos como se mostra olá mundo na tela utilizando bibliotecas, APIs e até mesmo plataformas, como é o JavaFX.
+
 ## Usando Swing e JavaFX
 Java funciona por pacotes, é como um carro popular. O básico vem no Java, qualquer coisa que precise a mais, é preciso adicionar pacotes.
 
@@ -471,7 +473,7 @@ Java.lang é responsável por funções como:
 - escrever na tela
 Coisas bem simples vem inclusas no Java, algumas delas vem dentro do Java.lang. Na maioria dos casos será necessário coisas adicionais, precisará de pacotes.
 
-Java.lang vem carregado em todo o sistema padrão do Java, logo, não precisa usar import.
+Java.lang vem carregado em todo o sistema padrão do Java, logo, não precisa importar esse pacote.
 
 ### Pacotes
 Outros exemplos de pacotes do Java são:
@@ -485,14 +487,14 @@ Outros exemplos de pacotes do Java são:
 - JavaFX.fxml (...)
 
 ### Biblioteca Swing
-#### AWT
+#### Swing
 Permite que crie interfaces gráficas para janelas, pra ambientes de janelas.
 
+#### AWT
+AWT é Abstract Window Toolkit.
 Swing vem da AWT. O problema da AWT é que ela deixava por conta do próprio SO de mostrar um componente. Deixava livre para que o Sistema Operacional decidisse a aparência dos componentes. Em cada Sistema o programa tinha uma aparência diferente, o que é bem negativo.
 
-AWT é Abstract Window Toolkit
-
-A biblioteca AWT ainda existe (aula gravada em 2015) e para importar o pacote digite:
+A biblioteca AWT ainda existe (aula gravada em 2015, no entanto ainda se faz presente no código gerado quando o painel foi automaticamente criado) e para importar o pacote digite:
 
 ~~~Java
 import java.awt;
@@ -507,11 +509,13 @@ import javax.swing;
 
 Uma tela usando uma biblioteca swing é muito mais bonita e possui outros componentes visuais bem mais legais.
 
-#### Swing NetBeans
+### Swing NetBeans
 Cria um projeto, Java Application, nomeia, escolhe a pasta e desmarca a opção de criar classe principal para facilitar a criação da janela quando estiver utilizando a biblioteca swing. Mais pra frente o NetBeans pergunta qual a classe principal, é melhor desmarcar e esperar que ele pergunte.
 
 Etapas:
-- Dentro do <default package>
+- Expandir projeto 
+- Expandir pacotes
+- Selecione <default package>
 - Crie um New File (clicando no arquivo branco)
 - Escolha Swing GUI Forms
 - Escolha JFrame Form
@@ -521,14 +525,64 @@ Etapas:
 Então criará o pacote e a classe, já com a janela. 
 Se ficar perdido, fez alguma besteira ou fechar uma janela. Vá em Janela e Redefinir Janela (não entre em pânico).
 
-##### Disposição
+#### Disposição
 No lado esquerdo, os _pacotes_ e as _classes_.
 Em baixo, o _navigator_ que mostra os _componentes_ dentro do _JFrame_ quando forem criados.
 A direita, a _paleta de componentes_ e também a _janela de propriedades_.
 Em baixo, a _saída_.
 No meio, o _projeto da classe_ e os dois botões que serão muito utilizados, _código-fonte_ e _projeto_ ou _Source_ e _Design_.
 
-#### Modo Gráfico (Drag and Drop)
+#### Modo Gráfico (Drag and Drop) - SWING
+Cria os programas apresentados na aula anterior.
+- Cria label e button arrastando da aba Paleta/Palette
+- É possível redimensionar a janela
+- Para alterar as características do texto ou do botão, clique uma vez sobre o elemento e em propriedade, em seguida altere o que desejar.
 
-X quanto maior mais pra baixo
-Y quanto maior mais para a direita
+A IDE facilita a vida, todo o código presente em source que você não digitou direto nele, é um código que foi gerado pela IDE. Tudo poderia ter de ser feito a mão, e muito provavelmente com o feedback apenas enquanto se está executando, com o posicionamento e alinhamento feitos inteiramente via código, tendo de ser executado a cada pequena alteração, para se ter uma melhor noção de como está ficando.
+Quando se trata de criação de interface gráfica, a IDE poupa muito tempo de trabalho e esforço.
+
+Na sessão _Navigator_ surgem os novos componentes criados ao arrastá-los para o Painel. Esses componentes devem ser renomeados para serem facilmente identificados e diminuir a confusão de quando se tem dezenas de componentes de mesmo tipo.
+Afinal, jButton1, jButton2, jButton3, não é nada intuitivo.
+
+### Teste de funcionamento do programa
+Aperte play (mais conhecido como Run Project), um botão triangular verde mais ou menos centralizado na parte superior da IDE, ou pressione f6.
+Ao executar pela primeira vez, aparecera uma janela, caso tenha desmarcado a criação da classe principal como foi recomendado. Essa janela questiona qual a classe principal e sugere que seja a classe do Painel criado, basta confirmar e programa será executado.
+
+### Programando o Botão
+Clique com o lado direito sobre o botão, selecione:
+~~~
+Events > Action > actionPerformed  [btnClickActionPerformed]
+~~~
+Ao clicar em actionPerformed, de Design vamos para Source, aonde o novo método foi criado.
+
+~~~Java
+private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {      
+}
+~~~
+
+Dentro do novo método, cria-se os comandos que serão executados ao clicar no botão. Logo, ao clicar no botão, o texto será alterado para o que estiver entre as aspas.
+
+~~~Java
+private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {      
+    //Muda o texto
+    lblMensagem.setText("Olá, Mundo!");
+}
+~~~
+
+Pronto, o código proposto pelo Guanabára é esse. Mas não fiquei satisfeito e criei um código que possibilita mais interações com o botão, modificando inclusive o texto contido no mesmo.
+
+O programa permite mostrar e esconder o texto, substituindo o texto por pontos  e espaço e modificando o que está escrito no botão a cada clique. Código do evento se encontra a baixo:
+
+~~~Java
+private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    if((btnClick.getText()).equals("Mostrar")){
+        lblMensagem.setText("Olá, Mundo!"); 
+        btnClick.setText("Esconder");
+    }else if((btnClick.getText()).equals("Esconder")){
+        lblMensagem.setText(".... ......");
+        btnClick.setText("Mostrar");
+    }
+} 
+~~~
+
+17:40 - continua
