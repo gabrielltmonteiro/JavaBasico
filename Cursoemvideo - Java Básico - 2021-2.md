@@ -464,6 +464,71 @@ import rodasMagnesio;
 ou seja, tudo que precisar de extra, você precisa importar. O farol não precisa ser importado, já vem por padrão em todo carro popular, e o mesmo ocorre com algumas funcionalidades Java.
 
 ### Java.lang
-Por padrão a Linguagem Java vem com um pacote chamado de Java.lang, esse pacote vem com as instruções básicas de funcionamento do Java, as ditas funções essênciais.
+Por padrão a Linguagem Java vem com um pacote chamado de Java.lang, esse pacote vem com as instruções básicas de funcionamento do Java, as ditas funções essênciais.  
+Java.lang é responsável por funções como:                 
+- realizar operações aritméticas
+- fazer testes condicionais
+- escrever na tela
+Coisas bem simples vem inclusas no Java, algumas delas vem dentro do Java.lang. Na maioria dos casos será necessário coisas adicionais, precisará de pacotes.
 
+Java.lang vem carregado em todo o sistema padrão do Java, logo, não precisa usar import.
 
+### Pacotes
+Outros exemplos de pacotes do Java são:
+- Java.applet (para criar aplicativos)
+- Java.util (utilitários)
+- Java.math (para funções matemáticas)
+- Java.net (para redes)
+- Javax.sound (extendido pra som)
+- Javax.media (extendido pra mídia)
+- Javax.swing (extendido pra interfaces gráficas) 
+- JavaFX.fxml (...)
+
+### Biblioteca Swing
+#### AWT
+Permite que crie interfaces gráficas para janelas, pra ambientes de janelas.
+
+Swing vem da AWT. O problema da AWT é que ela deixava por conta do próprio SO de mostrar um componente. Deixava livre para que o Sistema Operacional decidisse a aparência dos componentes. Em cada Sistema o programa tinha uma aparência diferente, o que é bem negativo.
+
+AWT é Abstract Window Toolkit
+
+A biblioteca AWT ainda existe (aula gravada em 2015) e para importar o pacote digite:
+
+~~~Java
+import java.awt;
+~~~
+
+#### Swing
+Pra resolver esse problema do AWT e evoluir a linguagem, surgiu am biblioteca Swing. Swing vem de balanço.
+
+~~~Java
+import javax.swing;
+~~~
+
+Uma tela usando uma biblioteca swing é muito mais bonita e possui outros componentes visuais bem mais legais.
+
+#### Swing NetBeans
+Cria um projeto, Java Application, nomeia, escolhe a pasta e desmarca a opção de criar classe principal para facilitar a criação da janela quando estiver utilizando a biblioteca swing. Mais pra frente o NetBeans pergunta qual a classe principal, é melhor desmarcar e esperar que ele pergunte.
+
+Etapas:
+- Dentro do <default package>
+- Crie um New File (clicando no arquivo branco)
+- Escolha Swing GUI Forms
+- Escolha JFrame Form
+- Nomeie a classe em CamelCase
+- Nomeie o pacote tudoemminusculo (pode usar . _ e tudo mais)
+
+Então criará o pacote e a classe, já com a janela. 
+Se ficar perdido, fez alguma besteira ou fechar uma janela. Vá em Janela e Redefinir Janela (não entre em pânico).
+
+##### Disposição
+No lado esquerdo, os _pacotes_ e as _classes_.
+Em baixo, o _navigator_ que mostra os _componentes_ dentro do _JFrame_ quando forem criados.
+A direita, a _paleta de componentes_ e também a _janela de propriedades_.
+Em baixo, a _saída_.
+No meio, o _projeto da classe_ e os dois botões que serão muito utilizados, _código-fonte_ e _projeto_ ou _Source_ e _Design_.
+
+#### Modo Gráfico (Drag and Drop)
+
+X quanto maior mais pra baixo
+Y quanto maior mais para a direita
